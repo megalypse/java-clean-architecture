@@ -1,4 +1,4 @@
-package model;
+package domain.model;
 
 public class Person {
     public Person(String name, String surname, double age) {

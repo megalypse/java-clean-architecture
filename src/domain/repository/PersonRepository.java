@@ -1,8 +1,9 @@
-package repository;
+package domain.repository;
 
 import java.util.List;
 
-import model.Person;
+import domain.model.Person;
+
 
 public interface PersonRepository {
 

@@ -1,11 +1,24 @@
 package com.alliguieri.account.domain;
 
+import lombok.Getter;
+
+@Getter
 public class Account {
+    private long id;
     private double amount;
+
+    public long getId() {
+        return id;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
 
     public Account() {}
 
-    public Account(double amount) {
+    public Account(long id, double amount) {
+        this.id = id;
         this.amount = amount;
     }
 

@@ -7,7 +7,7 @@ import com.alliguieri.account.domain.Account;
 public class AccountPersistanceAdapter implements LoadAccountPort, UpdateAccountPort {
     
     public Account loadAccount(long accountId) {
-        return new Account(100);
+        return new Account(1, 100);
     }
 
     public void updateAccount(Account oldAccount, Account newAccount) {

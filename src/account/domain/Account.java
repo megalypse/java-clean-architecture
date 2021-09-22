@@ -9,15 +9,22 @@ public class Account {
         this.amount = amount;
     }
 
-    public void setAmmount(double amount) {
-        this.amount = amount;
+    public void addAmount(double amount) {
+        this.amount += amount;
     }
 
-    public double getAmmount() {
-        return amount;
+    public boolean withdraw(double amount, Account targetAccount) {
+        var canWithdraw = canWithdraw(amount);
+
+        if (canWithdraw) {
+            this.amount -= amount;
+            targetAccount.addAmount(amount);
+        }
+
+        return canWithdraw;
     }
 
-    public void update(Account updatedAccount) {
-        this.amount = updatedAccount.amount;
+    private boolean canWithdraw(double amount) {
+        return (this.amount - amount) >= 0;
     }
 }

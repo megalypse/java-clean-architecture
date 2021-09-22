@@ -9,8 +9,19 @@ public class SendMoneyDto {
         long sourceAccountId,
         long targetAccountId
     ) {
+        assert sourceAccountId > 0;
+        assert targetAccountId > 0;
+
         this.sourceAccountId = sourceAccountId;
         this.targetAccountId = targetAccountId;
+    }
+
+    public long getSourceAccountId() {
+        return sourceAccountId;
+    }
+
+    public long getTargetAccountId() {
+        return targetAccountId;
     }
 
 }

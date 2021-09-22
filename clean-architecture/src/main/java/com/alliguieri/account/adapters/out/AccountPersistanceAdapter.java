@@ -1,8 +1,8 @@
-package account.adapters.out;
+package com.alliguieri.account.adapters.out;
 
-import account.application.port.out.LoadAccountPort;
-import account.application.port.out.UpdateAccountPort;
-import account.domain.Account;
+import com.alliguieri.account.application.port.out.LoadAccountPort;
+import com.alliguieri.account.application.port.out.UpdateAccountPort;
+import com.alliguieri.account.domain.Account;
 
 public class AccountPersistanceAdapter implements LoadAccountPort, UpdateAccountPort {
     

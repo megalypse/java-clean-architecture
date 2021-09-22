@@ -1,4 +1,4 @@
-package account.application.port.in;
+package com.alliguieri.account.application.port.in;
 
 public class SendMoneyDto {
     

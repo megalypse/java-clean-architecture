@@ -1,6 +1,6 @@
-package account.application.port.out;
+package com.alliguieri.account.application.port.out;
 
-import account.domain.Account;
+import com.alliguieri.account.domain.Account;
 
 public interface UpdateAccountPort {
 

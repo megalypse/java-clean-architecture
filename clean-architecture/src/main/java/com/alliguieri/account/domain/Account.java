@@ -1,4 +1,4 @@
-package account.domain;
+package com.alliguieri.account.domain;
 
 public class Account {
     private double amount;
@@ -14,7 +14,7 @@ public class Account {
     }
 
     public boolean withdraw(double amount, Account targetAccount) {
-        var canWithdraw = canWithdraw(amount);
+        boolean canWithdraw = canWithdraw(amount);
 
         if (canWithdraw) {
             this.amount -= amount;

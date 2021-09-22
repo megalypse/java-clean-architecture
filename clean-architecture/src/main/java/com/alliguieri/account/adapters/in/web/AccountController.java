@@ -1,7 +1,7 @@
-package account.adapters.in.web;
+package com.alliguieri.account.adapters.in.web;
 
-import account.application.port.in.SendMoneyUseCase;
-import account.domain.Account;
+import com.alliguieri.account.application.port.in.SendMoneyUseCase;
+import com.alliguieri.account.domain.Account;
 
 public class AccountController {
     private SendMoneyUseCase sendMoneyUseCase;

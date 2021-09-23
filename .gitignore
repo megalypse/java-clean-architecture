@@ -2,3 +2,5 @@
 **/.vscode
 **/bin
 **/target
+**/.classpath
+**/.project

@@ -11,7 +11,7 @@ public class AccountPersistanceAdapter implements LoadAccountPort, UpdateAccount
     }
 
     public void updateAccount(Account oldAccount, Account newAccount) {
-        newAccount.withdraw(50, newAccount);
+        oldAccount.withdraw(50, newAccount);
     }
 
 }

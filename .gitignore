@@ -1,4 +1,4 @@
 .vscode
-*/.vscode
-*/bin
-*/target
+**/.vscode
+**/bin
+**/target

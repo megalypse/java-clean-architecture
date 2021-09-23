@@ -1,6 +1,4 @@
-package com.alliguieri.account.application.port;
-
-import com.alliguieri.account.application.port.in.SendMoneyDto;
+package com.alliguieri.account.application.port.in;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

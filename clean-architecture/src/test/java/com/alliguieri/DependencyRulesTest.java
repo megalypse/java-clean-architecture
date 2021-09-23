@@ -10,10 +10,11 @@ public class DependencyRulesTest {
     void domainShouldNotDependOnApplicationLayer() {
         noClasses()
             .that()
-            .resideInAPackage("com.alliguieri.account.domain..")
+            .resideInAPackage("..domain..")
             .should()
             .dependOnClassesThat()
-            .resideInAnyPackage("com.alliguieri.account.application..")
+            .resideInAnyPackage("..application..")
             .check(new ClassFileImporter().importPackages("com.alliguieri"));
+
     }
 }

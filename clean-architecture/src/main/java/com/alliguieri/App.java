@@ -1,7 +1,5 @@
 package com.alliguieri;
 
-import java.util.List;
-
 import com.alliguieri.account.adapters.in.web.AccountController;
 import com.alliguieri.account.adapters.out.AccountPersistanceAdapter;
 import com.alliguieri.account.application.SendMoneyService;
